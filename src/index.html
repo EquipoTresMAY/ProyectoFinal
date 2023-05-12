@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pagina</title>
+
     
+
+</head>
+<style>
+    .topnav .search-container button {
+  float: center;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+</style>
+<body>
+    <!--<h1 id="titulo">hola mundo</h1>
+    <p class="subtitulo">shegcblWJHR
+    <p id="title"> Here is a
+        <a
+            href="https://www.google.com.mx/url?sa=i&url=https%3A%2F%2Fsuper.walmart.com.mx%2Fip%2Fcheetos-xtra-flamin-hot-sabor-queso-y-chile-145-g%2F00750101113093&psig=AOvVaw2jRntlz68bH18j5zPfSigT&ust=1683662078533000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOCR6JbA5v4CFQAAAAAdAAAAABAE">Link</a>
+    </p>
+    </p>
+
+    <p>UNO</p>
+    <p>DOS</p>
+    <p>TRES</p>
+
+    <button id="get_meal">Start</button> -->
+
+   
+
+
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+            <!--Logo con link a la pagina principal-->
+            <a class="navbar-brand"> 
+               
+                <img class="logo" src="img/Genshin-Impact-Logo.png" width="150px" height="100px"/>
+                <!--Menu de navegacion-->
+            </a>
+            <a href="">Comida Random</a>
+        </header>
+ 
+       
+        
+<br><br><br><br><br><br>
+<center>
+        <div >
+            <h1>¿Tienes Hambre?</h1>
+            <h4>Si es el caso busca una comida aquí</h4>
+        </div>
+        <div class="topnav">
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div></div>
+    
+    </center>
 </body>
+
+
+
+
+<script>
+    //const link = getElementsByTagName('a')[0];
+    // console.log(link)
+    //const title = document.getElementById('titulo');
+    //console.log(title);
+    // const subtitulo = document.getElementByClassName('subtitulo');
+    //console.log(subtitulo);
+
+    const paragraphs = document.body.getElementsByTagName("p");
+
+    console.log('Colección de nodos: ', paragraphs);
+
+    console.log('Primer nodo: ', paragraphs[2]);
+    console.log('Segundo nodo: ', paragraphs[3]);
+    console.log('Tercer nodo: ', paragraphs[4]);
+</script>
+
 </html>
