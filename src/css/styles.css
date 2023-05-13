@@ -1,1 +1,49 @@
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+.nav-list{
+    list-style-type: none ;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: blue;
+}
+.abrir-menu{
+    display: none;
+}
+@media screen and(max-width: 550px){
+  .abrir-menu{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+        
+    }
+    .nav-list li a{
+        color: blue;
+    }
+}*/
