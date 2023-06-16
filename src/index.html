@@ -2,36 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Pagina</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <title>Pagina</title>
 
 
 
 </head>
 <style>
-    .topnav .search-container button {
-        float: center;
-        padding: 6px 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #ddd;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
+  .topnav .search-container button {
+    float: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
     }
 
-.topnav .search-container button:hover {
-  background: #ccc;
-}
+    .header-right {
+      float: none;
+    }
+  }
 </style>
 
 <body>
-    <!--<h1 id="titulo">hola mundo</h1>
+  <!--<h1 id="titulo">hola mundo</h1>
     <p class="subtitulo">shegcblWJHR
     <p id="title"> Here is a
         <a
@@ -47,38 +111,74 @@
 
 
 
+  <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
 
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
-            <!--Logo con link a la pagina principal-->
-            <a class="navbar-brand">
 
-                <img class="logo" src="img/logo-removebg-preview.png" width="150px" height="100px" />
-                <!--Menu de navegacion-->
-            </a>
-            <a href="">Comida Random</a>
+      <!--Logo con link a la pagina principal-->
+      <a class="navbar-brand">
+
+        <img class="logo" src="img/logo-removebg-preview.png" width="150px" height="100px" />
+      </a>
+      <!--Menu de navegacion-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav"> <!--Contenedor de la lista, li es para poner un punto antes -->
+
+          <li class="nav-item">
+            <a class="nav-link" href=" ">Comida</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=" ">Bebidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=" ">Postres</a>
+          </li>
+          
+        </ul>
+      </div>
+
+
+      <div class="actions">
+       
+        <button class="btn btn-dark">Random</button>
+
+
+      </div>
+
+
+
+
+
+
     </header>
+  </nav>
 
 
 
-    <br><br><br><br><br><br>
-    <center>
-        <div>
-            <h1>¿Tienes Hambre?</h1>
-            <h4>Si es el caso busca una comida aquí</h4>
-        </div>
-        <div class="topnav">
-        <div class="search-container">
-            <form action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div></div>
-    
+  <br><br><br><br><br><br>
+  <center>
+    <div>
+      <h1>¿Tienes Hambre?</h1>
+      <h4>Si es el caso busca una comida aquí</h4>
+    </div>
+    <div class="topnav">
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
 
-</center>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-<!--PIE DE PÁGINA
+
+  </center>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <!--PIE DE PÁGINA
 <div class="footer">
      
         Derechos reservados &copy; 2023 <br>
@@ -87,65 +187,66 @@
         www.allfood.com 
 </div>
 PIE DE PÁGINA-->
-<!--PIE DE PÁGINA-->
-<div class="container-fluid bg-light text-center p-3">
-  <p class="small">
+  <!--PIE DE PÁGINA-->
+  <div class="container-fluid bg-danger text-center p-3">
+    <p class="small">
       Derechos reservados &copy; 2023 <br>
-      Design by: Maritza, Aracely, Yessenia <br>
+      Design by: Maritza, Araceli, Yessenia <br>
       Email: allfood@gmail.com <br>
-      www.allfood.com 
-  </p>
-</div>
-    
+      www.allfood.com
+    </p>
+  </div>
+
 </body>
 
 
 
 
 <script>
-    //const link = getElementsByTagName('a')[0];
-    // console.log(link)
-    //const title = document.getElementById('titulo');
-    //console.log(title);
-    // const subtitulo = document.getElementByClassName('subtitulo');
-    //console.log(subtitulo);
+  //const link = getElementsByTagName('a')[0];
+  // console.log(link)
+  //const title = document.getElementById('titulo');
+  //console.log(title);
+  // const subtitulo = document.getElementByClassName('subtitulo');
+  //console.log(subtitulo);
 
-    const paragraphs = document.body.getElementsByTagName("p");
+  const paragraphs = document.body.getElementsByTagName("p");
 
-    console.log('Colección de nodos: ', paragraphs);
+  console.log('Colección de nodos: ', paragraphs);
 
-    console.log('Primer nodo: ', paragraphs[2]);
-    console.log('Segundo nodo: ', paragraphs[3]);
-    console.log('Tercer nodo: ', paragraphs[4]);
+  console.log('Primer nodo: ', paragraphs[2]);
+  console.log('Segundo nodo: ', paragraphs[3]);
+  console.log('Tercer nodo: ', paragraphs[4]);
 
-   
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
 
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+ 
 </script>
 
 

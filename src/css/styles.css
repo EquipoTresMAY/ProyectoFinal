@@ -47,3 +47,101 @@
         color: blue;
     }
 }*/
+
+button {
+    color: #fcf8f8;
+    background-color: #5c0a0a;
+}
+
+.header{
+    margin-top: 30px ;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.header >*{
+    display: inline-block;
+    font-size: 20px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 45px;
+   
+    
+}
+li {
+    display: inline;
+}
+.logo{
+    
+    height: 100%;
+    
+}
+.navbar{
+   
+    text-align: left;
+    color: #0e0d0d;
+    font-weight: 500;
+    
+}
+
+
+.actions{
+    
+    text-align:left;
+    font-size: 14px;
+    
+}
+.actions >* {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+@media (max-width:575px) {
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .publish>form {
+        flex-direction: column;
+        display: flex;
+
+    }
+
+    .publish>form>div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish>form>div>input {
+        width: 65%;
+    }
+
+    main {
+        margin-top: 130px;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) /1fr;
+    }
+
+
+
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
